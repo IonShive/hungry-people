@@ -97,7 +97,18 @@
 		font-size: 96px;
 		line-height: 120px;
 		text-transform: uppercase;
+		position: relative;
 		@extend %banny;
+		&::before {
+			content: "";
+			width: 60px;
+			height: 5px;
+			position: absolute;
+			right: 355px;
+			bottom: 0;
+			background-color: #e8c300;
+			border-radius: 50px;
+		}
 	}
 	&__links {
 		display: flex;
@@ -205,6 +216,43 @@
 				fill: $accent;
 			}
 		}
+	}
+}
+
+.about-us {
+	padding: 100px 0;
+	background-color: #e5e5e5;
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__content {
+		max-width: 600px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		color: $accent;
+		position: relative;
+	}
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__subtitle {
+		margin-bottom: 20px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+		@extend %roboto-400;
+	}
+	&__img {
+		margin-right: 125px;
+	}
+	&__border {
+		right: 320px;
 	}
 }
 
