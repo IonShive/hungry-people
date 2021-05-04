@@ -6,17 +6,17 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
-	font-size: 16px;
-	line-height: 26px;
-	color: $defalt;
-	@extend %roboto-400;
+	font-size: 12px;
+	line-height: 18px;
+	color: $default;
+	@extend %roboto-700;
 }
 
 a {
-	font-size: 16px;
-	line-height: 26px;
+	font-size: 12px;
+	line-height: 18px;
 	color: $default;
-	@extend %roboto-400;
+	@extend %roboto-700;
 }
 
 .main {
@@ -24,7 +24,7 @@ a {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1310px;
 	padding: 0 15px;
 	margin: 0 auto;
 }

@@ -4,4 +4,208 @@
 @import "libs";
 @import "global";
 
+.header {
+	height: 100vh;
+	background-image: url("../img/header/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 226px;
+	}
+	&__list-link {
+		width: 133px;
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__box {
+		padding-top: 25px;
+		margin-bottom: -90px;
+		position: relative;
+		svg {
+			width: 150px;
+			height: 150px;
+			fill: #ffd600;
+		}
+		&::after,
+		&::before {
+			content: "";
+			width: 530px;
+			height: 1px;
+			background-color: rgba(255, 255, 255, 0.2);
+			position: absolute;
+			bottom: 80px;
+		}
+		&::after {
+			right: 205px;
+		}
+		&::before {
+			left: 205px;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	&__text {
+		max-width: 495px;
+		max-height: 20px;
+		position: absolute;
+		left: -110px;
+		line-height: 12px;
+		text-align: center;
+		transform: rotate(-90deg);
+	}
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		position: relative;
+		&::after,
+		&::before {
+			content: "";
+			width: 1px;
+			height: 700px;
+			background-color: rgba(255, 255, 255, 0.2);
+			position: absolute;
+			bottom: -21px;
+		}
+		&::after {
+			right: -10px;
+		}
+		&::before {
+			left: -10px;
+		}
+	}
+	&__subtitle {
+		font-size: 14px;
+		text-align: center;
+		letter-spacing: 0.5em;
+		text-transform: uppercase;
+	}
+	&__title {
+		height: 139px;
+		margin-bottom: 36px;
+		font-size: 96px;
+		line-height: 120px;
+		text-transform: uppercase;
+		@extend %banny;
+	}
+	&__links {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 82px;
+	}
+	&__link {
+		width: 200px;
+		height: 60px;
+		margin-right: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 5px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		transition: all 0.5s;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			background-color: #e8c300;
+		}
+	}
+	&__link-box {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 83px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__link-bottom {
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $default;
+		border-radius: 50%;
+		transition: all 0.5s;
+		position: relative;
+		svg {
+			width: 13px;
+			height: 10px;
+			fill: $title;
+		}
+		&:hover {
+			background-color: $title;
+			svg {
+				fill: $default;
+			}
+		}
+		&::after,
+		&::before {
+			content: "";
+			width: 1px;
+			background-color: rgba(255, 255, 255, 0.2);
+			position: absolute;
+			right: 18px;
+		}
+		&::after {
+			height: 455px;
+			bottom: 51px;
+		}
+		&::before {
+			height: 82px;
+			bottom: -91px;
+		}
+	}
+	&__inner {
+		width: 60px;
+		height: 220px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+	}
+	&__link-icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+		height: 60px;
+		background-color: $accent;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-radius: 50%;
+		transition: all 0.5s;
+		svg {
+			width: 20px;
+			height: 20px;
+			fill: $default;
+		}
+		&:first-child {
+			svg {
+				width: 15px;
+			}
+		}
+		&:hover {
+			background-color: $default;
+			svg {
+				fill: $accent;
+			}
+		}
+	}
+}
+
 @import "media";
