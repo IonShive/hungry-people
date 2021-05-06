@@ -630,4 +630,76 @@
 	}
 }
 
+.events {
+	background-image: url("../img/specialties/bg.jpg");
+	&__top {
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 0.5em;
+	}
+	&__content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 475px;
+		height: 475px;
+		margin-right: 50px;
+		position: relative;
+	}
+	&__img {
+		object-fit: cover;
+	}
+	&__text {
+		width: 396px;
+		height: 80px;
+		padding-left: 25px;
+		display: flex;
+		align-items: center;
+		font-size: 24px;
+		line-height: 12px;
+		background-color: #000;
+		text-transform: uppercase;
+		position: absolute;
+		top: 196px;
+		right: -117px;
+		transform: rotate(90deg);
+		@extend %banny;
+	}
+	&__text--right {
+		right: 0;
+		left: -117px;
+		transform: rotate(270deg);
+	}
+	&__border {
+		bottom: 90px;
+		left: -105px;
+	}
+	&__border--right {
+		left: 320px;
+	}
+	&__footer {
+		height: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: rgba(255, 255, 255, 0.5);
+		@extend %roboto-400;
+	}
+	&__link-tel {
+		color: rgba(255, 255, 255, 0.5);
+		margin-right: 5px;
+		&:first-child {
+			margin: 0 0 0 5px;
+		}
+	}
+	&__gallery {
+		display: flex;
+		justify-content: center;
+	}
+}
+
 @import "media";
