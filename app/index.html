@@ -613,7 +613,7 @@
 					<a class="events__link-tel" href="tel+40729131637">
 						+40 729 131 637
 					</a>
-					<a class="events__link-tel" href="tel+40726458782">
+					<a class="events__link-tel" href="tel:+40726458782">
 						/+40 726 458 782
 					</a>
 					or use the contact form.
@@ -626,10 +626,70 @@
 				<img class="events__gallery-img" src="img/events/gallery/4.jpg" alt="events img">
 			</div>
 		</section>
+		<section class="contact">
+			<div class="container">
+				<h3 class="contact__title title">
+					CONTACT
+				</h3>
+				<h5 class="contact__subtitle">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+					magna.
+				</h5>
+				<form class="contact__form" action="#">
+					<div class="contact__form-box">
+						<input class="contact__input" type="text" required placeholder="Name">
+						<input class="contact__input" type="email" required placeholder="Email">
+						<input class="contact__input" type="tel" required placeholder="Phone">
+					</div>
+					<textarea class="contact__textarea" required placeholder="Message"></textarea>
+					<div class="contact__form-inner">
+						<div class="contact__link-box">
+							<a class="contact__link" href="#">
+								<svg>
+									<use xlink:href="img/icons/sprite.svg#map"></use>
+								</svg>
+								5th London Boulevard, U.K.
+							</a>
+							<div class="contact__link-wrapper">
+								<a class="contact__link" href="tel:+40729131637">
+									<svg>
+										<use xlink:href="img/icons/sprite.svg#phone"></use>
+									</svg>
+									+40 729 131 637/
+								</a>
+								<a class="contact__link" href="tel:+40726458782">
+									+40 726 458 782
+								</a>
+							</div>
+							<a class="contact__link" href="mailto:office@mindblister.com">
+								<svg>
+									<use xlink:href="img/icons/sprite.svg#mail"></use>
+								</svg>
+								office@mindblister.com
+							</a>
+						</div>
+						<button class="contact__btn" type="submit">
+							SEND MESSAGE
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="map" id="map"></div>
+		</section>
 	</main>
 	<footer class="footer">
 	</footer>
 	<script src="js/main.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+	<script>
+		let map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById("map"), {
+				center: { lat: 29.754904115905475, lng: -95.36149620468923 },
+				zoom: 13
+			});
+		}
+	</script>
 </body>
 
 </html>
