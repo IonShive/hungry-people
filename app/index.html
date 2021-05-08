@@ -12,18 +12,29 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="cross">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
 		<nav class="header__list">
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#header">
 				HOME
 			</a>
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#about-us">
 				ABOUT
 			</a>
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#team">
 				TEAM
 			</a>
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#book-table">
 				BOOKING
 			</a>
 			<div class="header__box">
@@ -31,16 +42,16 @@
 					<use xlink:href="img/icons/sprite.svg#logo"></use>
 				</svg>
 			</div>
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#menu">
 				MENU
 			</a>
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#events__gallery">
 				GALERIE
 			</a>
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#events">
 				EVENTS
 			</a>
-			<a class="header__list-link" href="#">
+			<a class="header__list-link" href="#contact">
 				CONTACT
 			</a>
 		</nav>
@@ -57,15 +68,15 @@
 						hungry people
 					</h1>
 					<div class="header__links">
-						<a class="header__link" href="#">
+						<a class="header__link" href="#book-table">
 							BOOK TABLE
 						</a>
-						<a class="header__link" href="#">
+						<a class="header__link" href="#specialties">
 							EXPLORE
 						</a>
 					</div>
 					<div class="header__link-box">
-						<a class="header__link-bottom" href="#">
+						<a class="header__link-bottom" href="#about-us">
 							<svg>
 								<use xlink:href="img/icons/sprite.svg#arrow-bottom"></use>
 							</svg>
@@ -93,7 +104,7 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="about-us">
+		<section class="about-us" id="about-us">
 			<div class="container">
 				<div class="about-us__wrapper">
 					<div class="about-us__content">
@@ -101,18 +112,18 @@
 							about us
 						</h2>
 						<h3 class="about-us__subtitle">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-							tempor
-							magna.
+							Hungry People is a Turkish cuisine restaurant. Only here you can taste authentic masterpieces from
+							our Turkish masters.
+							Dishes are prepared right in front of your eyes - in a wood oven, tandoor and grill. We will be
+							glad to see you visiting
+							us!
 						</h3>
 						<h5 class="about-us__text">
-							Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula.
-							Sed
-							dictum, enim sed
-							ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
-							feugiat
-							diam convallis
-							pharetra. Nulla facilisis semper laoreet.
+							The Hungry People cafe menu combines both traditional Turkish and European, Mediterranean dishes.
+							The main feature of
+							each dish is that each slice of fresh bread, juicy meat is prepared by skilled chefs, whom we
+							invited directly from
+							Turkey.
 						</h5>
 					</div>
 					<img class="about-us__img" src="img/about-us/bg.png" alt="about-us img">
@@ -120,7 +131,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="team">
+		<section class="team" id="team">
 			<div class="container">
 				<h3 class="team__name">
 					OUR TEAM
@@ -133,24 +144,19 @@
 							MASTER CHEF
 						</h2>
 						<h3 class="team__subtitle">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
-							tempor
-							magna.
+							Chef - Ibrahim Kaya, from his great-great-grandfather a chef from the city of Izmir, one of the
+							best chefs in Turkey.
 						</h3>
 						<h5 class="team__text">
-							Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula.
-							Sed
-							dictum, enim sed
-							ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt
-							feugiat
-							diam convallis
-							pharetra. Nulla facilisis semper laoreet.
+							Ibrahim has gone from a simple chef to a high-class professional, he has undergone training and
+							internships in the best
+							restaurants in Italy and Germany and is now involved in the most responsible projects.
 						</h5>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="book-table">
+		<section class="book-table" id="book-table">
 			<div class="container">
 				<div class="book-table__wrapper">
 					<div class="book-table__content">
@@ -196,7 +202,7 @@
 				</h5>
 			</div>
 		</section>
-		<section class="specialties">
+		<section class="specialties" id="specialties">
 			<div class="container">
 				<h3 class="specialties__name">
 					specialties
@@ -212,21 +218,13 @@
 									chocolate pancakes
 								</h2>
 								<h3 class="specialties__subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
-									a,
-									tempor
-									magna.
+									We bring to your attention festive pancakes that your children will definitely like.
 								</h3>
 								<h5 class="specialties__text">
-									Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-									ligula.
-									Sed
-									dictum, enim sed
-									ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-									tincidunt
-									feugiat
-									diam convallis
-									pharetra. Nulla facilisis semper laoreet.
+									Chocolate discs for coating confectionery products containing - 30% cocoa.
+									Nutritional value per 100g. product: proteins - 7.0 g, fats - 39.7 g., carbohydrates - 50.5
+									g., calorie content - 590.00
+									kcal.
 								</h5>
 							</div>
 						</div>
@@ -240,21 +238,13 @@
 									chocolate pancakes
 								</h2>
 								<h3 class="specialties__subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
-									a,
-									tempor
-									magna.
+									We bring to your attention festive pancakes that your children will definitely like.
 								</h3>
 								<h5 class="specialties__text">
-									Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-									ligula.
-									Sed
-									dictum, enim sed
-									ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-									tincidunt
-									feugiat
-									diam convallis
-									pharetra. Nulla facilisis semper laoreet.
+									Chocolate discs for coating confectionery products containing - 30% cocoa.
+									Nutritional value per 100g. product: proteins - 7.0 g, fats - 39.7 g., carbohydrates - 50.5
+									g., calorie content - 590.00
+									kcal.
 								</h5>
 							</div>
 						</div>
@@ -268,21 +258,13 @@
 									chocolate pancakes
 								</h2>
 								<h3 class="specialties__subtitle">
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est
-									a,
-									tempor
-									magna.
+									We bring to your attention festive pancakes that your children will definitely like.
 								</h3>
 								<h5 class="specialties__text">
-									Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices
-									ligula.
-									Sed
-									dictum, enim sed
-									ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
-									tincidunt
-									feugiat
-									diam convallis
-									pharetra. Nulla facilisis semper laoreet.
+									Chocolate discs for coating confectionery products containing - 30% cocoa.
+									Nutritional value per 100g. product: proteins - 7.0 g, fats - 39.7 g., carbohydrates - 50.5
+									g., calorie content - 590.00
+									kcal.
 								</h5>
 							</div>
 						</div>
@@ -290,7 +272,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="menu">
+		<section class="menu" id="menu">
 			<div class="container">
 				<div class="menu__wrapper">
 					<h3 class="menu__title title">
@@ -310,284 +292,290 @@
 						<button class="menu__btn" data-filter=".drinks">DRINKS</button>
 					</div>
 					<div class="menu__items">
-						<div class="menu__item mix soupe">
+						<a class="menu__item mix soupe" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Miso soup . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									3,50 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Miso broth, wakame seaweed, udon noodles, shiitake mushrooms, tender tofu cheese, green onions
+								and sesame seeds
 							</h5>
-						</div>
-						<div class="menu__item mix pizza">
+						</a>
+						<a class="menu__item mix pizza" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Pizza Four Seasons . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									25,15 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Tomato sauce, mozzarella cheese, ripe tomatoes, champignons, delicious salami, dorblu cheese
+								that just melts in your
+								mouth.
 							</h5>
-						</div>
-						<div class="menu__item mix pasta">
+						</a>
+						<a class="menu__item mix pasta" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Bolognese pasta . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									4,99 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Spaghetti, bolognese sauce, parmesan cheese and spicy garlic oil
 							</h5>
-						</div>
-						<div class="menu__item mix desert">
+						</a>
+						<a class="menu__item mix desert" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Oreo . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									0,99 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Chocolate crumble base, cream cheese with oreo, chocolate biscuit and ganache
 							</h5>
-						</div>
-						<div class="menu__item mix wine">
+						</a>
+						<a class="menu__item mix wine" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Rkatsiteli Wine . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									15,30 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Rkatsiteli wine (dry, white)
 							</h5>
-						</div>
-						<div class="menu__item mix beer">
+						</a>
+						<a class="menu__item mix beer" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Beer Stella Artois . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									2,45 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Beer Stella Artois
 							</h5>
-						</div>
-						<div class="menu__item mix drinks">
+						</a>
+						<a class="menu__item mix drinks" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Classic lemonade . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									0,20 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Mint, syrup, soda, lemon
 							</h5>
-						</div>
-						<div class="menu__item mix soupe">
+						</a>
+						<a class="menu__item mix soupe" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Chicken noodle soup . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									3,40 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Chicken broth, tender chicken fillet, udon noodles, fresh carrots, quail egg, some herbs and
+								spicy garlic oil
 							</h5>
-						</div>
-						<div class="menu__item mix pizza">
+						</a>
+						<a class="menu__item mix pizza" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Bella . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									20,30 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Creamy sauce, mozzarella and dorblu cheese, juicy pear, walnut and honey
 							</h5>
-						</div>
-						<div class="menu__item mix pasta">
+						</a>
+						<a class="menu__item mix pasta" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Cheese pasta . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									4,20 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Spaghetti, cream sauce, onions, delicate cream cheese, unique Dorblu cheese, parmesan cheese and
+								spicy garlic butter
 							</h5>
-						</div>
-						<div class="menu__item mix desert">
+						</a>
+						<a class="menu__item mix desert" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Cheesecake . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									1,20 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Vanilla crumble and creamy curd layer
 							</h5>
-						</div>
-						<div class="menu__item mix wine">
+						</a>
+						<a class="menu__item mix wine" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Saperavi wine . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									15,40 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Saperavi wine (red, dry)
 							</h5>
-						</div>
-						<div class="menu__item mix beer">
+						</a>
+						<a class="menu__item mix beer" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Hugarden . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									2,45 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Hugarden White unfiltered
 							</h5>
-						</div>
-						<div class="menu__item mix drinks">
+						</a>
+						<a class="menu__item mix drinks" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Cherry lemonade . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									0,30 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Mint, soda water, cherry syrup, cherry berry, lemon
 							</h5>
-						</div>
-						<div class="menu__item mix soupe">
+						</a>
+						<a class="menu__item mix soupe" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Broccoli cream soup . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									4,20 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Delicate cream soup with broccoli cabbage, crispy croutons and cream
 							</h5>
-						</div>
-						<div class="menu__item mix pizza">
+						</a>
+						<a class="menu__item mix pizza" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Pepperoni . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									27,40 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Tomato sauce, mozzarella cheese combined with pepperoni sausage
 							</h5>
-						</div>
-						<div class="menu__item mix pasta">
+						</a>
+						<a class="menu__item mix pasta" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Pasta Carbonara . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									6,15 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Spaghetti, cream sauce, crispy bacon, onions, egg yolk, parmesan cheese and piquant garlic
+								butter
 							</h5>
-						</div>
-						<div class="menu__item mix desert">
+						</a>
+						<a class="menu__item mix desert" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Napoleon . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									1,15 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Sand, yeast-free cakes with butter custard
 							</h5>
-						</div>
-						<div class="menu__item mix wine">
+						</a>
+						<a class="menu__item mix wine" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Pinot Grigio wine . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									17,10 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Pinot Grigio wine (dry, white, Italy)
 							</h5>
-						</div>
-						<div class="menu__item mix beer">
+						</a>
+						<a class="menu__item mix beer" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Beer Stella Artois n / a . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									2,50 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Beer Stella Artois n / a
 							</h5>
-						</div>
-						<div class="menu__item mix drinks">
+						</a>
+						<a class="menu__item mix drinks" href="#">
 							<div class="menu__item-top">
 								<h3 class="menu__item-title">
-									PIZZA QUATRO STAGIONI . . . .
+									Strawberry lemonade . . . .
 								</h3>
 								<h5 class="menu__item-price">
-									55,68 USD
+									0,25 USD
 								</h5>
 							</div>
 							<h5 class="menu__item-subtitle">
-								Integer ullamcorper neque eu purus euismod
+								Mint, strawberry syrup, soda water, strawberries, lemon
 							</h5>
-						</div>
+						</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="events">
+		<section class="events" id="events">
 			<div class="container">
 				<h3 class="events__top">
 					PRIVATE EVENTS
@@ -611,29 +599,28 @@
 				<h5 class="events__footer">
 					For private events please call:
 					<a class="events__link-tel" href="tel+40729131637">
-						+40 729 131 637
+						+40 729 131 637/
 					</a>
 					<a class="events__link-tel" href="tel:+40726458782">
-						/+40 726 458 782
+						+40 726 458 782
 					</a>
 					or use the contact form.
 				</h5>
 			</div>
-			<div class="events__gallery">
+			<div class="events__gallery" id="events__gallery">
 				<img class="events__gallery-img" src="img/events/gallery/1.jpg" alt="events img">
 				<img class="events__gallery-img" src="img/events/gallery/2.jpg" alt="events img">
 				<img class="events__gallery-img" src="img/events/gallery/3.jpg" alt="events img">
 				<img class="events__gallery-img" src="img/events/gallery/4.jpg" alt="events img">
 			</div>
 		</section>
-		<section class="contact">
+		<section class="contact" id="contact">
 			<div class="container">
 				<h3 class="contact__title title">
 					CONTACT
 				</h3>
 				<h5 class="contact__subtitle">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
-					magna.
+					Leave a request and we will contact you to clarify all the details of the order.
 				</h5>
 				<form class="contact__form" action="#">
 					<div class="contact__form-box">
