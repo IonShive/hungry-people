@@ -1,60 +1,142 @@
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	font-size: 12px;
-	line-height: 18px;
-	color: $default;
-	@extend %roboto-700;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 18px;
+    color: $default;
+    overflow-x: hidden;
+    @extend %roboto-700;
 }
 
 a {
-	font-size: 12px;
-	line-height: 18px;
-	color: $default;
-	@extend %roboto-700;
+    font-size: 12px;
+    line-height: 18px;
+    color: $default;
+    @extend %roboto-700;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #c0c1c2;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #c0c1c2;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
 }
 
 .main {
-	flex-grow: 1;
+    flex-grow: 1;
 }
 
 .container {
-	max-width: 1310px;
-	padding: 0 15px;
-	margin: 0 auto;
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .title {
-	font-size: 36px;
-	line-height: 48px;
-	text-align: center;
-	text-transform: uppercase;
-	color: $accent;
-	@extend %banny;
-	position: relative;
-	&::before {
-		content: "";
-		width: 60px;
-		height: 5px;
-		position: absolute;
-		right: 265px;
-		bottom: -10px;
-		background-color: #e8c300;
-		border-radius: 50px;
-	}
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent;
+    @extend %banny;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 60px;
+        height: 5px;
+        position: absolute;
+        right: 265px;
+        bottom: -10px;
+        background-color: #e8c300;
+        border-radius: 50px;
+    }
 }
 
 .border {
-	width: 250px;
-	height: 250px;
-	border: 20px solid #e8c300;
-	filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
-	border-radius: 5px;
-	position: absolute;
-	z-index: 5;
+    width: 250px;
+    height: 250px;
+    border: 20px solid #e8c300;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+    position: absolute;
+    z-index: 5;
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInRightBig {
+    animation-name: fadeInRightBig;
+}
+
+@keyframes fadeInRightBig {
+    from {
+        opacity: 0;
+        transform: translate3d(2000px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__fadeInLeftBig {
+    animation-name: fadeInLeftBig;
+}
+
+@keyframes fadeInLeftBig {
+    from {
+        opacity: 0;
+        transform: translate3d(-2000px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate__fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
