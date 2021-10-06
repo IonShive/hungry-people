@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hungry People</title>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="cross">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<nav class="header__list wow animate__fadeIn">
+			<a class="header__list-link" href="#header">
+				HOME
+			</a>
+			<a class="header__list-link" href="#about-us">
+				ABOUT
+			</a>
+			<a class="header__list-link" href="#team">
+				TEAM
+			</a>
+			<a class="header__list-link" href="#book-table">
+				BOOKING
+			</a>
+			<div class="header__box">
+				<svg>
+					<use xlink:href="img/icons/sprite.svg#logo"></use>
+				</svg>
+			</div>
+			<a class="header__list-link" href="#menu">
+				MENU
+			</a>
+			<a class="header__list-link" href="#events__gallery">
+				GALERIE
+			</a>
+			<a class="header__list-link" href="#events">
+				EVENTS
+			</a>
+			<a class="header__list-link" href="#contact">
+				CONTACT
+			</a>
+		</nav>
+		<div class="container">
+			<div class="header__wrapper">
+				<h3 class="header__text wow animate__fadeIn">
+					Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+				</h3>
+				<div class="header__content">
+					<h3 class="header__subtitle wow animate__fadeInDown">
+						RESTAURANT
+					</h3>
+					<h1 class="header__title wow animate__fadeIn">
+						hungry people
+					</h1>
+					<div class="header__links">
+						<a class="header__link wow animate__fadeInDown" href="#book-table">
+							BOOK TABLE
+						</a>
+						<a class="header__link wow animate__fadeInDown" href="#specialties">
+							EXPLORE
+						</a>
+					</div>
+					<div class="header__link-box wow animate__fadeInDown">
+						<a class="header__link-bottom" href="#about-us">
+							<svg>
+								<use xlink:href="img/icons/sprite.svg#arrow-bottom"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="header__inner">
+					<a class="header__link-icon wow animate__fadeIn" href="#" target="_blank">
+						<svg>
+							<use xlink:href="img/icons/sprite.svg#facebook"></use>
+						</svg>
+					</a>
+					<a class="header__link-icon wow animate__fadeIn" href="#" target="_blank">
+						<svg>
+							<use xlink:href="img/icons/sprite.svg#twitter"></use>
+						</svg>
+					</a>
+					<a class="header__link-icon wow animate__fadeIn" href="#" target="_blank">
+						<svg>
+							<use xlink:href="img/icons/sprite.svg#instagram"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="about-us" id="about-us">
+			<div class="container">
+				<div class="about-us__wrapper">
+					<div class="about-us__content">
+						<h2 class="about-us__title title wow animate__fadeInDown">
+							about us
+						</h2>
+						<h3 class="about-us__subtitle wow animate__fadeIn">
+							Hungry People is a Turkish cuisine restaurant. Only here you can taste authentic
+							masterpieces from
+							our Turkish masters.
+							Dishes are prepared right in front of your eyes - in a wood oven, tandoor and grill. We will
+							be
+							glad to see you visiting
+							us!
+						</h3>
+						<h5 class="about-us__text wow animate__fadeIn">
+							The Hungry People cafe menu combines both traditional Turkish and European, Mediterranean
+							dishes.
+							The main feature of
+							each dish is that each slice of fresh bread, juicy meat is prepared by skilled chefs, whom
+							we
+							invited directly from
+							Turkey.
+						</h5>
+					</div>
+					<img class="about-us__img" src="img/about-us/bg.png" alt="about-us img">
+					<div class="about-us__border border"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="team" id="team">
+			<div class="container">
+				<h3 class="team__name wow animate__fadeInDown">
+					OUR TEAM
+				</h3>
+				<div class="team__wrapper">
+					<img class="team__img" src="img/team/masterchef.png" alt="team img">
+					<div class="team__border border"></div>
+					<div class="team__content">
+						<h2 class="team__title title wow animate__fadeInDown">
+							MASTER CHEF
+						</h2>
+						<h3 class="team__subtitle wow animate__fadeIn">
+							Chef - Ibrahim Kaya, from his great-great-grandfather a chef from the city of Izmir, one of
+							the
+							best chefs in Turkey.
+						</h3>
+						<h5 class="team__text wow animate__fadeIn">
+							Ibrahim has gone from a simple chef to a high-class professional, he has undergone training
+							and
+							internships in the best
+							restaurants in Italy and Germany and is now involved in the most responsible projects.
+						</h5>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="book-table" id="book-table">
+			<div class="container">
+				<div class="book-table__wrapper">
+					<div class="book-table__content">
+						<h3 class="book-table__title title wow animate__fadeInDown">
+							book a table
+						</h3>
+						<form class="book-table__form wow animate__fadeIn" action="#">
+							<input class="book-table__input" placeholder="Name" type="text" required>
+							<input class="book-table__input" placeholder="Email" type="email" required>
+							<input class="book-table__input" placeholder="Phone" type="number" min="0" required>
+							<div class="book-table__select-box">
+								<select class="book-table__select" required>
+									<option class="book-table__option" value="1">People</option>
+									<option class="book-table__option" value="2">for one</option>
+									<option class="book-table__option" value="3">for two</option>
+									<option class="book-table__option" value="4">for three</option>
+									<option class="book-table__option" value="5">for four</option>
+								</select>
+							</div>
+							<input class="book-table__input" placeholder="Date (mm/dd)" type="number" min="0" required>
+							<div class="book-table__select-box">
+								<select class="book-table__select" required>
+									<option class="book-table__option" value="1">Time</option>
+									<option class="book-table__option" value="2">08:20</option>
+									<option class="book-table__option" value="3">10:00</option>
+									<option class="book-table__option" value="4">14:30</option>
+									<option class="book-table__option" value="5">18:00</option>
+								</select>
+							</div>
+							<button class="book-table__btn" type="submit">BOOK NOW</button>
+						</form>
+					</div>
+					<img class="book-table__img" src="img/book-table/clok.png" alt="book-table img">
+					<div class="book-table__border border"></div>
+				</div>
+				<h5 class="book-table__text wow animate__fadeInDown">
+					Mon - Fri:
+					<span class="book-table__text-accent">8PM - 10PM</span>
+					, Sat - Sun:
+					<span class="book-table__text-accent">8PM - 3AM</span>
+					, Phone:
+					<span class="book-table__text-accent">+40729 131 637/+40 726 458 782</span>
+				</h5>
+			</div>
+		</section>
+
+		<section class="specialties" id="specialties">
+			<div class="container">
+				<h3 class="specialties__name wow animate__fadeInDown">
+					specialties
+				</h3>
+				<div class="specialties__box"></div>
+				<div class="specialties__slider">
+					<div class="specialties__item">
+						<div class="specialties__wrapper">
+							<img class="specialties__img" src="img/specialties/item/1.png" alt="team img">
+							<div class="specialties__border border"></div>
+							<div class="specialties__content">
+								<h2 class="specialties__title title wow animate__fadeInDown">
+									chocolate pancakes
+								</h2>
+								<h3 class="specialties__subtitle wow animate__fadeIn">
+									We bring to your attention festive pancakes that your children will definitely like.
+								</h3>
+								<h5 class="specialties__text wow animate__fadeIn">
+									Chocolate discs for coating confectionery products containing - 30% cocoa.
+									Nutritional value per 100g. product: proteins - 7.0 g, fats - 39.7 g., carbohydrates
+									- 50.5
+									g., calorie content - 590.00
+									kcal.
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="specialties__item">
+						<div class="specialties__wrapper">
+							<img class="specialties__img" src="img/specialties/item/1.png" alt="team img">
+							<div class="specialties__border border"></div>
+							<div class="specialties__content">
+								<h2 class="specialties__title title wow animate__fadeInDown">
+									chocolate pancakes
+								</h2>
+								<h3 class="specialties__subtitle wow animate__fadeIn">
+									We bring to your attention festive pancakes that your children will definitely like.
+								</h3>
+								<h5 class="specialties__text wow animate__fadeIn">
+									Chocolate discs for coating confectionery products containing - 30% cocoa.
+									Nutritional value per 100g. product: proteins - 7.0 g, fats - 39.7 g., carbohydrates
+									- 50.5
+									g., calorie content - 590.00
+									kcal.
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="specialties__item">
+						<div class="specialties__wrapper">
+							<img class="specialties__img" src="img/specialties/item/1.png" alt="team img">
+							<div class="specialties__border border"></div>
+							<div class="specialties__content">
+								<h2 class="specialties__title title wow animate__fadeInDown">
+									chocolate pancakes
+								</h2>
+								<h3 class="specialties__subtitle wow animate__fadeIn">
+									We bring to your attention festive pancakes that your children will definitely like.
+								</h3>
+								<h5 class="specialties__text wow animate__fadeIn">
+									Chocolate discs for coating confectionery products containing - 30% cocoa.
+									Nutritional value per 100g. product: proteins - 7.0 g, fats - 39.7 g., carbohydrates
+									- 50.5
+									g., calorie content - 590.00
+									kcal.
+								</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="menu" id="menu">
+			<div class="container">
+				<div class="menu__wrapper">
+					<h3 class="menu__title title wow animate__fadeInDown">
+						DELICIOUS MENU
+					</h3>
+					<h5 class="menu__subtitle wow animate__fadeIn">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a,
+						tempor
+						magna.
+					</h5>
+					<div class="menu__buttons wow animate__fadeIn">
+						<button class="menu__btn" data-filter=".soupe">SOUPE</button>
+						<button class="menu__btn" data-filter=".pizza">PIZZA</button>
+						<button class="menu__btn" data-filter=".pasta">PASTA</button>
+						<button class="menu__btn" data-filter=".desert">DESERT</button>
+						<button class="menu__btn" data-filter=".wine">WINE</button>
+						<button class="menu__btn" data-filter=".beer">BEER</button>
+						<button class="menu__btn" data-filter=".drinks">DRINKS</button>
+					</div>
+					<div class="menu__items wow animate__fadeIn">
+						<a class="menu__item mix soupe" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Miso soup . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									3,50 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Miso broth, wakame seaweed, udon noodles, shiitake mushrooms, tender tofu cheese, green
+								onions
+								and sesame seeds
+							</h5>
+						</a>
+						<a class="menu__item mix pizza" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Pizza Four Seasons . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									25,15 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Tomato sauce, mozzarella cheese, ripe tomatoes, champignons, delicious salami, dorblu
+								cheese
+								that just melts in your
+								mouth.
+							</h5>
+						</a>
+						<a class="menu__item mix pasta" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Bolognese pasta . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									4,99 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Spaghetti, bolognese sauce, parmesan cheese and spicy garlic oil
+							</h5>
+						</a>
+						<a class="menu__item mix desert" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Oreo . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									0,99 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Chocolate crumble base, cream cheese with oreo, chocolate biscuit and ganache
+							</h5>
+						</a>
+						<a class="menu__item mix wine" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Rkatsiteli Wine . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									15,30 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Rkatsiteli wine (dry, white)
+							</h5>
+						</a>
+						<a class="menu__item mix beer" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Beer Stella Artois . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									2,45 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Beer Stella Artois
+							</h5>
+						</a>
+						<a class="menu__item mix drinks" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Classic lemonade . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									0,20 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Mint, syrup, soda, lemon
+							</h5>
+						</a>
+						<a class="menu__item mix soupe" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Chicken noodle soup . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									3,40 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Chicken broth, tender chicken fillet, udon noodles, fresh carrots, quail egg, some herbs
+								and
+								spicy garlic oil
+							</h5>
+						</a>
+						<a class="menu__item mix pizza" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Bella . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									20,30 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Creamy sauce, mozzarella and dorblu cheese, juicy pear, walnut and honey
+							</h5>
+						</a>
+						<a class="menu__item mix pasta" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Cheese pasta . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									4,20 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Spaghetti, cream sauce, onions, delicate cream cheese, unique Dorblu cheese, parmesan
+								cheese and
+								spicy garlic butter
+							</h5>
+						</a>
+						<a class="menu__item mix desert" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Cheesecake . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									1,20 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Vanilla crumble and creamy curd layer
+							</h5>
+						</a>
+						<a class="menu__item mix wine" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Saperavi wine . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									15,40 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Saperavi wine (red, dry)
+							</h5>
+						</a>
+						<a class="menu__item mix beer" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Hugarden . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									2,45 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Hugarden White unfiltered
+							</h5>
+						</a>
+						<a class="menu__item mix drinks" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Cherry lemonade . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									0,30 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Mint, soda water, cherry syrup, cherry berry, lemon
+							</h5>
+						</a>
+						<a class="menu__item mix soupe" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Broccoli cream soup . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									4,20 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Delicate cream soup with broccoli cabbage, crispy croutons and cream
+							</h5>
+						</a>
+						<a class="menu__item mix pizza" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Pepperoni . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									27,40 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Tomato sauce, mozzarella cheese combined with pepperoni sausage
+							</h5>
+						</a>
+						<a class="menu__item mix pasta" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Pasta Carbonara . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									6,15 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Spaghetti, cream sauce, crispy bacon, onions, egg yolk, parmesan cheese and piquant
+								garlic
+								butter
+							</h5>
+						</a>
+						<a class="menu__item mix desert" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Napoleon . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									1,15 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Sand, yeast-free cakes with butter custard
+							</h5>
+						</a>
+						<a class="menu__item mix wine" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Pinot Grigio wine . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									17,10 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Pinot Grigio wine (dry, white, Italy)
+							</h5>
+						</a>
+						<a class="menu__item mix beer" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Beer Stella Artois n / a . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									2,50 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Beer Stella Artois n / a
+							</h5>
+						</a>
+						<a class="menu__item mix drinks" href="#">
+							<div class="menu__item-top">
+								<h3 class="menu__item-title">
+									Strawberry lemonade . . . .
+								</h3>
+								<h5 class="menu__item-price">
+									0,25 USD
+								</h5>
+							</div>
+							<h5 class="menu__item-subtitle">
+								Mint, strawberry syrup, soda water, strawberries, lemon
+							</h5>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="events" id="events">
+			<div class="container">
+				<h3 class="events__top wow animate__fadeInDown">
+					PRIVATE EVENTS
+				</h3>
+				<div class="events__content wow animate__fadeIn">
+					<div class="events__item">
+						<div class="events__border border"></div>
+						<img class="events__img" src="img/events/item/1.png" alt="events img">
+						<h3 class="events__text">
+							weddings
+						</h3>
+					</div>
+					<div class="events__item">
+						<h3 class="events__text events__text--right">
+							corporate pzrties
+						</h3>
+						<img class="events__img" src="img/events/item/2.png" alt="events img">
+						<div class="events__border events__border--right border"></div>
+					</div>
+				</div>
+				<h5 class="events__footer wow animate__fadeInDown">
+					For private events please call:
+					<a class="events__link-tel" href="tel+40729131637">
+						+40 729 131 637/
+					</a>
+					<a class="events__link-tel" href="tel:+40726458782">
+						+40 726 458 782
+					</a>
+					or use the contact form.
+				</h5>
+			</div>
+			<div class="events__gallery wow animate__fadeIn" id="events__gallery">
+				<img class="events__gallery-img" src="img/events/gallery/1.jpg" alt="events img">
+				<img class="events__gallery-img" src="img/events/gallery/2.jpg" alt="events img">
+				<img class="events__gallery-img" src="img/events/gallery/3.jpg" alt="events img">
+				<img class="events__gallery-img" src="img/events/gallery/4.jpg" alt="events img">
+			</div>
+		</section>
+
+		<section class="contact" id="contact">
+			<div class="container">
+				<h3 class="contact__title title wow animate__fadeInDown">
+					CONTACT
+				</h3>
+				<h5 class="contact__subtitle wow animate__fadeIn">
+					Leave a request and we will contact you to clarify all the details of the order.
+				</h5>
+				<form class="contact__form wow animate__fadeIn" action="#">
+					<div class="contact__form-box">
+						<input class="contact__input" type="text" required placeholder="Name">
+						<input class="contact__input" type="email" required placeholder="Email">
+						<input class="contact__input" type="tel" required placeholder="Phone">
+					</div>
+					<textarea class="contact__textarea" required placeholder="Message"></textarea>
+					<div class="contact__form-inner">
+						<div class="contact__link-box">
+							<a class="contact__link" href="#">
+								<svg>
+									<use xlink:href="img/icons/sprite.svg#map"></use>
+								</svg>
+								5th London Boulevard, U.K.
+							</a>
+							<div class="contact__link-wrapper">
+								<a class="contact__link" href="tel:+40729131637">
+									<svg>
+										<use xlink:href="img/icons/sprite.svg#phone"></use>
+									</svg>
+									+40 729 131 637/
+								</a>
+								<a class="contact__link" href="tel:+40726458782">
+									+40 726 458 782
+								</a>
+							</div>
+							<a class="contact__link" href="mailto:office@mindblister.com">
+								<svg>
+									<use xlink:href="img/icons/sprite.svg#mail"></use>
+								</svg>
+								office@mindblister.com
+							</a>
+						</div>
+						<button class="contact__btn" type="submit">
+							SEND MESSAGE
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="map" id="map"></div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="footer__text">
+			© Copyright
+			<span class="footer__accent">Mindblister</span>
+			2019
+		</div>
+	</footer>
+
+	<script src="js/main.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" async></script>
+	<script>
+		let map;
+		function initMap() {
+			map = new google.maps.Map(document.getElementById("map"), {
+				center: { lat: 51.61574636614466, lng: -0.14993085006383725 },
+				zoom: 13
+			});
+		}
+	</script>
+
+</body>
+
+</html>
